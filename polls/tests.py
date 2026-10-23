@@ -1,3 +1,6 @@
 from django.test import TestCase
 
-# Create your tests here.
+
+class PollsTests(TestCase):
+    def test_basic_setup(self):
+        self.assertTrue(True)

@@ -1,0 +1,19 @@
+language: python
+
+dist: jammy
+
+python:
+  - "3.12"
+
+install:
+  - pip install -r requirements.txt
+  - pip install black flake8 coverage coveralls
+
+script:
+  - black --check .
+  - flake8 .
+  - coverage run --source=polls manage.py test
+  - coverage report
+
+after_success:
+  - coveralls
