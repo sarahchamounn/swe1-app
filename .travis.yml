@@ -5,6 +5,10 @@ dist: jammy
 python:
   - "3.12"
 
+env:
+  global:
+    - DJANGO_SECRET_KEY=travis-ci-testing-only-secret-key-not-for-production
+
 install:
   - pip install -r requirements.txt
   - pip install black flake8 coverage coveralls
