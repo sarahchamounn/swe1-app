@@ -29,3 +29,4 @@ This project uses Travis CI to run:
 - Coverage.py
 - Coveralls
 - AWS Elastic Beanstalk
+<!-- Testing Travis CI pull request automation -->
